@@ -3,8 +3,6 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ProblemStatement from '@/components/ProblemStatement';
 import HeatPumpBenefits from '@/components/HeatPumpBenefits';
-import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
 
 const Index = () => {
   return (
@@ -15,8 +13,6 @@ const Index = () => {
         <Hero />
         <ProblemStatement />
         <HeatPumpBenefits />
-        <HowItWorks />
-        <Testimonials />
       </main>
       
       <footer className="bg-gray-50 py-16 border-t border-gray-200 min-h-[200px] block w-full relative z-10">
