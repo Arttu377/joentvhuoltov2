@@ -65,13 +65,7 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-12 gap-4">
           {/* Stats box */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="col-span-12 md:col-span-4 lg:col-span-3 rounded-xl overflow-hidden"
-          >
+          <div className="col-span-12 md:col-span-4 lg:col-span-3 rounded-xl overflow-hidden">
             <div className={`h-full ${stats[0].bgColor} p-8 flex flex-col`}>
               <div className="mt-auto">
                 <div className="text-5xl font-bold mb-2">{stats[0].value}</div>
