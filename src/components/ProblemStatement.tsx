@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { X, Check, PhoneCall, Mail, MessageSquare, Users, Zap, BarChart3 } from 'lucide-react';
-import { motion } from 'framer-motion';
 const ProblemStatement = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isElectronicsModalOpen, setIsElectronicsModalOpen] = useState(false);
@@ -130,7 +129,7 @@ const ProblemStatement = () => {
         {/* Palvelukortit heti otsikon alle */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Ilmalämpö asennukset ja huolto */}
-          <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg hover:-translate-y-1 transition-transform duration-300">
+          <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg ">
             {/* Header section with background image */}
             <div className="relative h-48 flex items-end" style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./lovable-uploads/bd97c7a8-7d81-46b8-a59a-8a94b0053ca2.png')`,
@@ -161,7 +160,7 @@ const ProblemStatement = () => {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="bg-[#2B4565] hover:bg-[#1e3147] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                className="bg-[#2B4565] hover:bg-[#1e3147] text-white px-6 py-3 rounded-lg font-medium "
               >
                 Lue lisää
               </button>
@@ -169,7 +168,7 @@ const ProblemStatement = () => {
           </div>
           
           {/* Elektroniikkahuolto */}
-          <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg hover:-translate-y-1 transition-transform duration-300">
+          <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg ">
             {/* Header section with background image */}
             <div className="relative h-48 flex items-end" style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png')`,
@@ -206,7 +205,7 @@ const ProblemStatement = () => {
                     });
                   }
                 }}
-                className="bg-[#2B4565] hover:bg-[#1e3147] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                className="bg-[#2B4565] hover:bg-[#1e3147] text-white px-6 py-3 rounded-lg font-medium "
               >
                 Lue lisää
               </button>
@@ -214,7 +213,7 @@ const ProblemStatement = () => {
           </div>
 
           {/* Antenniasennukset ja korjaukset */}
-          <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg hover:-translate-y-1 transition-transform duration-300">
+          <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg ">
             {/* Header section with background image */}
             <div className="relative h-48 flex items-end" style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./lovable-uploads/kappale.png')`,
@@ -252,7 +251,7 @@ const ProblemStatement = () => {
                     });
                   }
                 }}
-                className="bg-[#2B4565] hover:bg-[#1e3147] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                className="bg-[#2B4565] hover:bg-[#1e3147] text-white px-6 py-3 rounded-lg font-medium "
               >
                 Lue lisää
               </button>

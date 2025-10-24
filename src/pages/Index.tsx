@@ -1,44 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import ProblemStatement from '@/components/ProblemStatement';
-import HeatPumpBenefits from '@/components/HeatPumpBenefits';
-import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
-import { motion } from 'framer-motion';
-import { ArrowRight, Check, Sparkles } from 'lucide-react';
+
 const Index = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-reveal');
-        }
-      });
-    }, {
-      threshold: 0.15,
-      rootMargin: "0px 0px -100px 0px"
-    });
-    document.querySelectorAll('section').forEach(section => {
-      observer.observe(section);
-    });
-    return () => {
-      document.querySelectorAll('section').forEach(section => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
-  useEffect(() => {
-    console.log('Footer component is rendering and mounted');
-  }, []);
-  return <div className="min-h-screen bg-white dark:bg-convrt-dark-blue overflow-x-hidden">
+  return (
+    <div className="min-h-screen bg-white dark:bg-convrt-dark-blue overflow-x-hidden">
       <Navbar />
       
       <main>
         <Hero />
-        <ProblemStatement />
-        <HeatPumpBenefits />
-        
+        <div className="py-20 bg-gray-100">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <h2 className="text-3xl font-bold text-center mb-8">Sivu toimii!</h2>
+            <p className="text-center">Tämä on testi-sivu ilman ongelmallisia komponentteja.</p>
+          </div>
+        </div>
       </main>
       
       <footer className="bg-gray-50 py-16 border-t border-gray-200 min-h-[200px] block w-full relative z-10">
@@ -151,6 +127,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
 export default Index;

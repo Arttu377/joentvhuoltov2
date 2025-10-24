@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Target, Users, LineChart } from 'lucide-react';
 import StepContent from './how-it-works/StepContent';
-import { motion } from 'framer-motion';
 
 const HowItWorks = () => {
   const [activeStep, setActiveStep] = useState(1);
@@ -79,25 +78,16 @@ const HowItWorks = () => {
             {/* Image Display - Now covering the entire right section */}
             <div className="lg:w-2/3 relative h-full">
               {steps.map((step) => (
-                <motion.div 
+                <div 
                   key={step.id}
-                  className="absolute inset-0 h-full w-full"
-                  initial={{ opacity: 0 }}
-                  animate={{ 
-                    opacity: activeStep === step.id ? 1 : 0,
-                    zIndex: activeStep === step.id ? 10 : 1
-                  }}
-                  transition={{ 
-                    duration: 0.5, 
-                    ease: "easeInOut"
-                  }}
+                  className={`absolute inset-0 h-full w-full ${activeStep === step.id ? 'opacity-100 z-10' : 'opacity-0 z-1'}`}
                 >
                   <img 
                     src={step.gifUrl} 
                     alt={`Step ${step.id}: ${step.title}`} 
                     className="w-full h-full object-cover object-center"
                   />
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
