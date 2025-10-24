@@ -9,6 +9,7 @@ const Hero = () => {
   const statsRef = useRef<HTMLDivElement>(null);
   const demoRef = useRef<HTMLDivElement>(null);
   const isMobile = useMobileDetection();
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   // Animation variants
   const containerVariants = {
@@ -40,10 +41,18 @@ const Hero = () => {
   return <>
       {/* Fixed Background Image */}
       <div className="fixed inset-0 z-0">
+        {!imageLoaded && (
+          <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2B4565]"></div>
+          </div>
+        )}
         <img 
           src="./lovable-uploads/tere.png" 
           alt="Hero background"
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+          loading="eager"
+          decoding="async"
+          onLoad={() => setImageLoaded(true)}
           style={{
             objectPosition: '55% 45%'
           }}
