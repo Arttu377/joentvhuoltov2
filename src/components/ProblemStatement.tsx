@@ -31,12 +31,12 @@ const ProblemStatement = () => {
             </div>
             <div className="flex justify-center space-x-8">
               <img 
-                src="/lovable-uploads/heijo.png" 
+                src="./lovable-uploads/heijo.png" 
                 alt="Mitsubishi Heavy Industries" 
                 className="h-16 object-contain"
               />
               <img 
-                src="/lovable-uploads/inno.png" 
+                src="./lovable-uploads/inno.png" 
                 alt="Innova" 
                 className="h-16 object-contain"
               />
@@ -57,7 +57,7 @@ const ProblemStatement = () => {
             </button>
             <div className="flex justify-center mb-4">
               <img 
-                src="/lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
+                src="./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
                 alt="Elektroniikkahuolto" 
                 className="w-3/4 h-48 object-cover rounded-lg"
               />
@@ -100,7 +100,7 @@ const ProblemStatement = () => {
             </button>
             <div className="flex justify-start pl-0 mb-4">
               <img 
-                src="/lovable-uploads/kappale.png" 
+                src="./lovable-uploads/kappale.png" 
                 alt="Antenniasennukset ja korjaukset" 
                 className="w-11/12 h-48 object-cover rounded-lg"
               />
@@ -133,7 +133,7 @@ const ProblemStatement = () => {
           <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg hover:-translate-y-1 transition-transform duration-300">
             {/* Header section with background image */}
             <div className="relative h-48 flex items-end" style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/bd97c7a8-7d81-46b8-a59a-8a94b0053ca2.png')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./lovable-uploads/bd97c7a8-7d81-46b8-a59a-8a94b0053ca2.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}>
@@ -172,7 +172,7 @@ const ProblemStatement = () => {
           <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg hover:-translate-y-1 transition-transform duration-300">
             {/* Header section with background image */}
             <div className="relative h-48 flex items-end" style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}>
@@ -217,7 +217,7 @@ const ProblemStatement = () => {
           <div className="bg-white rounded-[20px] border border-gray-100 relative overflow-hidden group shadow-lg hover:-translate-y-1 transition-transform duration-300">
             {/* Header section with background image */}
             <div className="relative h-48 flex items-end" style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/kappale.png')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./lovable-uploads/kappale.png')`,
             backgroundSize: '130%',
             backgroundPosition: 'center 30%',
             backgroundRepeat: 'no-repeat'

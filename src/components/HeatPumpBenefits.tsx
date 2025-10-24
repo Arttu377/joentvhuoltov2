@@ -67,12 +67,12 @@ const HeatPumpBenefits = () => {
             {/* Kuvat oikealla */}
             <div className="flex justify-center space-x-8">
               <img 
-                src="/lovable-uploads/heijo.png" 
+                src="./lovable-uploads/heijo.png" 
                 alt="Mitsubishi Heavy Industries" 
                 className="h-20 object-contain"
               />
               <img 
-                src="/lovable-uploads/inno.png" 
+                src="./lovable-uploads/inno.png" 
                 alt="Innova" 
                 className="h-20 object-contain"
               />
@@ -218,7 +218,7 @@ const HeatPumpBenefits = () => {
             {/* Kuva oikealla */}
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
+                src="./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
                 alt="Elektroniikkahuolto" 
                 className="w-3/4 h-48 object-cover rounded-lg"
               />
@@ -246,7 +246,7 @@ const HeatPumpBenefits = () => {
             {/* Kuva oikealla */}
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/kappale.png" 
+                src="./lovable-uploads/kappale.png" 
                 alt="Antenniasennukset ja korjaukset" 
                 className="w-3/4 h-48 object-cover rounded-lg"
                 style={{

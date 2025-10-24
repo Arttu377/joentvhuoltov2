@@ -75,7 +75,7 @@ const PlatformDemo = () => {
                 <div className="p-4">
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-                      <img src="/lovable-uploads/0f228602-2449-495f-866b-df124fde272a.png" alt="Profile" className="w-full h-full object-cover" />
+                      <img src="./lovable-uploads/0f228602-2449-495f-866b-df124fde272a.png" alt="Profile" className="w-full h-full object-cover" />
                     </div>
                     <div>
                       <div className="flex items-center">
@@ -89,7 +89,7 @@ const PlatformDemo = () => {
                   <div className="mb-4">
                     <div className="mb-3">
                       <img 
-                        src="/lovable-uploads/9e821d7b-4c6c-42fb-9e64-b978773c0e48.png" 
+                        src="./lovable-uploads/9e821d7b-4c6c-42fb-9e64-b978773c0e48.png" 
                         alt="Ilmastointiyksikkö seinällä" 
                         className="w-full h-48 object-cover rounded-lg"
                       />

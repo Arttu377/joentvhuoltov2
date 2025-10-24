@@ -41,7 +41,7 @@ const Hero = () => {
       {/* Fixed Background Image */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="/lovable-uploads/tere.png" 
+          src="./lovable-uploads/tere.png" 
           alt="Hero background"
           className="w-full h-full object-cover"
           style={{
