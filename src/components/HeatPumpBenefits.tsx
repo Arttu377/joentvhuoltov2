@@ -44,7 +44,7 @@ const HeatPumpBenefits = () => {
   };
   return (
     <>
-      <section id="heat-pump-details" className="py-20 bg-gradient-to-r from-white to-[#d1dae8]">
+      <section id="heat-pump-details" className="py-20 bg-red-200 relative z-10">
         <div className="container mx-auto px-6 max-w-6xl">
         {/* Ilmalämpö asennukset ja huolto osio */}
         <div className="mb-24">
