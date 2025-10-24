@@ -77,29 +77,17 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Handshake box */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="col-span-12 md:col-span-4 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100"
-          >
+          <div className="col-span-12 md:col-span-4 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100">
             <div className="h-full flex items-center justify-center p-6">
               <div className="font-black text-2xl italic">Handshake</div>
             </div>
-          </motion.div>
+          </div>
 
           {/* First testimonial */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="col-span-12 md:col-span-8 lg:col-span-6 rounded-xl overflow-hidden"
-          >
+          <div className="col-span-12 md:col-span-8 lg:col-span-6 rounded-xl overflow-hidden">
             <div className={`h-full ${testimonials[0].bgColor} p-8 flex flex-col`}>
               <div className="text-2xl font-medium mb-8">
                 "{testimonials[0].quote}"
@@ -109,16 +97,10 @@ const Testimonials = () => {
                 <div className="text-gray-600 text-sm">{testimonials[0].title}</div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Second testimonial */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="col-span-12 md:col-span-7 lg:col-span-6 rounded-xl overflow-hidden"
-          >
+          <div className="col-span-12 md:col-span-7 lg:col-span-6 rounded-xl overflow-hidden">
             <div className={`h-full ${testimonials[1].bgColor} p-8 flex flex-col`}>
               <div className="text-2xl font-medium mb-8">
                 "{testimonials[1].quote}"
@@ -127,31 +109,19 @@ const Testimonials = () => {
                 <div className="font-bold text-lg">connecteam</div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Sumup box */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="col-span-12 md:col-span-5 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100"
-          >
+          <div className="col-span-12 md:col-span-5 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100">
             <div className="h-full flex items-center justify-center p-6">
               <div className="font-black text-xl">
                 <span className="inline-block bg-black text-white px-1 py-0.5 rounded">∫</span> sumup°
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Third testimonial */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            viewport={{ once: true }}
-            className="col-span-12 md:col-span-12 lg:col-span-3 rounded-xl overflow-hidden"
-          >
+          <div className="col-span-12 md:col-span-12 lg:col-span-3 rounded-xl overflow-hidden">
             <div className={`h-full ${testimonials[2].bgColor} p-8 flex flex-col`}>
               <div className="text-2xl font-medium mb-8">
                 "{testimonials[2].quote}"
@@ -162,7 +132,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
