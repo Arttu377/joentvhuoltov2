@@ -1,6 +1,10 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import ProblemStatement from '@/components/ProblemStatement';
+import HeatPumpBenefits from '@/components/HeatPumpBenefits';
+import HowItWorks from '@/components/HowItWorks';
+import Testimonials from '@/components/Testimonials';
 
 const Index = () => {
   return (
@@ -9,12 +13,10 @@ const Index = () => {
       
       <main>
         <Hero />
-        <div className="py-20 bg-gray-100">
-          <div className="container mx-auto px-6 max-w-6xl">
-            <h2 className="text-3xl font-bold text-center mb-8">Sivu toimii!</h2>
-            <p className="text-center">Tämä on testi-sivu ilman ongelmallisia komponentteja.</p>
-          </div>
-        </div>
+        <ProblemStatement />
+        <HeatPumpBenefits />
+        <HowItWorks />
+        <Testimonials />
       </main>
       
       <footer className="bg-gray-50 py-16 border-t border-gray-200 min-h-[200px] block w-full relative z-10">
