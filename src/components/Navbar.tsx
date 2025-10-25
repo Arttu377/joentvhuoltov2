@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8 mr-6">
+        <div className="hidden md:flex items-center space-x-8 mr-20">
           <a href="#" className="text-[#2B4565] hover:text-[#1e3147] font-medium text-lg transition-colors">
             Etusivu
           </a>
