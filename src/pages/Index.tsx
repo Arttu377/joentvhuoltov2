@@ -20,7 +20,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold text-convrt-dark-blue mb-4 text-[#2b4565]">Joen laitehuolto J. Simanainen</h3>
+              <h3 className="text-xl font-bold text-convrt-dark-blue mb-2 text-[#2b4565]">Joen laitehuolto J. Simanainen</h3>
+              <p className="text-sm text-gray-500 mb-4">(ent. Joen TV-huolto J. Simanainen)</p>
               <p className="text-gray-600 mb-6">
                 Elektroniikka-asennukset ja huollot ammattitaidolla Joensuussa ja lähialueilla.
               </p>

@@ -119,7 +119,7 @@ const ProblemStatement = () => {
         {/* Pääotsikko osion alussa */}
         <div id="palvelut" className="text-center mb-16 pt-16">
           <h3 className="font-bold text-convrt-dark-blue mb-6 text-4xl text-[#2b4565]">
-            Paikallista, kestävää ja asiantuntevaa palvelua
+            Palvelut
           </h3>
           <p className="text-convrt-dark-blue/80 text-lg max-w-2xl mx-auto text-[#2b4565] mb-8">
             Tarjoan ilmalämpöpumppujen ja antennien asennuksia sekä elektroniikkahuoltoa. Ota yhteyttä, jos tarvitset apua näissä asioissa.
