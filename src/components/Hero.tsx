@@ -36,9 +36,9 @@ const Hero = () => {
             {/* Service sections with background bar */}
             <div className="relative mb-12 max-w-3xl mx-auto">
               {/* Background bar */}
-              <div className="absolute inset-0 bg-[#2B4565]/40 rounded-lg -mx-6"></div>
+              <div className="absolute inset-0 bg-[#2B4565]/40 rounded-lg -mx-2 md:-mx-6"></div>
               
-              <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 py-6 px-6">
+              <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 py-2 px-2 md:px-6">
                 <div className="text-center">
                   <h3 className="text-xl font-semibold text-white mb-2">Ilmalämpö asennukset ja huolto</h3>
                 </div>
