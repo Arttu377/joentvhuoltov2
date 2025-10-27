@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6 md:py-4",
         isScrolled 
           ? "bg-white backdrop-blur-lg shadow-sm" 
           : "bg-transparent"
@@ -39,7 +39,23 @@ const Navbar = () => {
           <a href="#" className="text-[#2B4565] hover:text-[#1e3147] font-medium text-lg transition-colors">
             Etusivu
           </a>
-          <a href="#palvelut" className="text-[#2B4565] hover:text-[#1e3147] font-medium text-lg transition-colors">
+          <a 
+            href="#palvelut" 
+            className="text-[#2B4565] hover:text-[#1e3147] font-medium text-lg transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('palvelut');
+              if (element) {
+                const elementRect = element.getBoundingClientRect();
+                const absoluteElementTop = elementRect.top + window.pageYOffset;
+                const offsetPosition = absoluteElementTop - 80;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+          >
             Palvelut
           </a>
           <a 
@@ -51,7 +67,7 @@ const Navbar = () => {
               if (element) {
                 const elementRect = element.getBoundingClientRect();
                 const absoluteElementTop = elementRect.top + window.pageYOffset;
-                const offsetPosition = absoluteElementTop - 80;
+                const offsetPosition = absoluteElementTop - 160;
                 window.scrollTo({
                   top: offsetPosition,
                   behavior: 'smooth'
@@ -86,7 +102,20 @@ const Navbar = () => {
             <a 
               href="#palvelut" 
               className="text-gray-700 hover:text-[#2B4565] font-medium text-lg transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsMobileMenuOpen(false);
+                const element = document.getElementById('palvelut');
+                if (element) {
+                  const elementRect = element.getBoundingClientRect();
+                  const absoluteElementTop = elementRect.top + window.pageYOffset;
+                  const offsetPosition = absoluteElementTop - 80;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
             >
               Palvelut
             </a>
@@ -100,7 +129,7 @@ const Navbar = () => {
                 if (element) {
                   const elementRect = element.getBoundingClientRect();
                   const absoluteElementTop = elementRect.top + window.pageYOffset;
-                  const offsetPosition = absoluteElementTop - 80;
+                  const offsetPosition = absoluteElementTop - 160;
                   window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'

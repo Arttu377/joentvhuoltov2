@@ -17,8 +17,8 @@ const ProblemStatement = () => {
             >
               <X size={24} />
             </button>
-            <h3 className="text-2xl font-bold text-[#2B4565] mb-4">
-              Ilmalämpö asennukset ja huolto
+              <h3 className="text-2xl font-bold text-[#2B4565] mb-4">
+              Ilmalämpöpumpun asennukset ja huolto
             </h3>
             <div className="text-gray-700 leading-relaxed mb-6">
               <h4 className="font-semibold text-[#2B4565] mb-3">Asennukset ja myynti:</h4>
@@ -122,7 +122,7 @@ const ProblemStatement = () => {
             Palvelut
           </h3>
           <p className="text-convrt-dark-blue/80 text-lg max-w-2xl mx-auto text-[#2b4565] mb-8">
-            Tarjoan ilmalämpöpumppujen ja antennien asennuksia sekä elektroniikkahuoltoa. Ota yhteyttä, jos tarvitset apua näissä asioissa.
+            Tarjoan ilmalämpöpumppujen ja antennien asennuksia sekä elektroniikkahuoltoa.
           </p>
         </div>
         
@@ -141,15 +141,15 @@ const ProblemStatement = () => {
               </div>
               
               <h3 className="text-2xl font-bold text-white p-6 pb-4 relative z-10">
-                Ilmalämpö asennukset ja huolto
+                Ilmalämpöpumpun asennukset ja huolto
               </h3>
             </div>
             
             {/* Content section */}
             <div className="p-6">
               <div className="mb-6">
-                <div className="text-convrt-dark-blue/70 text-sm">
-                  <p className="mb-2">Ilmalämpöpumppujen asennukset ja myynti. Lisäksi huollot, kuten korjaukset, puhdistushuollot ja toiminnan tarkistukset.</p>
+                  <div className="text-convrt-dark-blue/70 text-sm">
+                  <p className="mb-2">Ilmalämpöpumpun asennukset ja myynti. Lisäksi huollot, kuten korjaukset, puhdistushuollot ja toiminnan tarkistukset.</p>
                 </div>
               </div>
               
@@ -188,7 +188,7 @@ const ProblemStatement = () => {
             <div className="p-6">
               <div className="mb-6">
                 <div className="text-convrt-dark-blue/70 text-sm">
-                  <p>Elektroniikkahuolto sisältää laitteiden vianmäärityksen, korjauksen ja komponenttien vaihdon.</p>
+                  <p>Elektroniikkahuollon kokemusta vuodesta 1989 alkaen</p>
                 </div>
               </div>
               
@@ -240,7 +240,7 @@ const ProblemStatement = () => {
               
               <button 
                 onClick={() => {
-                  const element = document.getElementById('antenna-details');
+                  const element = document.getElementById('electronics-details');
                   if (element) {
                     const elementRect = element.getBoundingClientRect();
                     const absoluteElementTop = elementRect.top + window.pageYOffset;

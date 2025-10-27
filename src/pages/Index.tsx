@@ -73,7 +73,7 @@ const Index = () => {
                       if (element) {
                         const elementRect = element.getBoundingClientRect();
                         const absoluteElementTop = elementRect.top + window.pageYOffset;
-                        const offsetPosition = absoluteElementTop - 80;
+                        const offsetPosition = absoluteElementTop - 160;
                         window.scrollTo({
                           top: offsetPosition,
                           behavior: 'smooth'
