@@ -15,7 +15,7 @@ const HowItWorks = () => {
       description: "Our AI scans social media to find where your target audience is most active, identifying the exact channels, topics, and content they engage with.",
       highlightText: "AI identifies:",
       highlightDetails: "Relevant conversations, active communities, and engagement opportunities",
-      gifUrl: "./lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
+    		gifUrl: `${import.meta.env.BASE_URL}lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png`
     },
     {
       id: 2,

@@ -134,14 +134,14 @@ const HeatPumpBenefits = () => {
               <div className="flex space-x-6">
                 <div className="bg-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img 
-                src="./lovable-uploads/heijo.png" 
+                src={`${import.meta.env.BASE_URL}lovable-uploads/heijo.png`} 
                 alt="Mitsubishi Heavy Industries" 
                     className="h-24 object-contain"
               />
                 </div>
                 <div className="bg-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img 
-                src="./lovable-uploads/inno.png" 
+                src={`${import.meta.env.BASE_URL}lovable-uploads/inno.png`} 
                 alt="Innova" 
                     className="h-24 object-contain"
               />
@@ -199,13 +199,13 @@ const HeatPumpBenefits = () => {
             <div className="col-span-1 lg:col-span-1 flex justify-center md:justify-start lg:justify-end items-start relative h-full mt-2 lg:mt-0 lg:mr-16 xl:mr-0">
               <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-6 lg:block lg:relative">
               <img 
-                src="./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
+                src={`${import.meta.env.BASE_URL}lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png`} 
                 alt="Elektroniikkahuolto" 
                   className="w-60 h-44 md:w-56 md:h-44 lg:w-64 lg:h-48 object-cover rounded-xl shadow-lg lg:-translate-x-8"
                 />
                 <div className="w-60 h-44 md:w-56 md:h-44 lg:w-64 lg:h-48 rounded-xl shadow-lg lg:translate-x-8 lg:translate-y-8 lg:absolute lg:overflow-hidden bg-transparent">
                   <img 
-                    src="./lovable-uploads/kappale.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/kappale.png`} 
                     alt="Antenniasennukset" 
                     className="w-full h-full object-cover"
                     style={{ transform: 'scale(1.15)' }}
@@ -224,7 +224,7 @@ const HeatPumpBenefits = () => {
       <div className="container mx-auto px-6 max-w-4xl relative">
         <div className="absolute -top-4 -right-20 hidden lg:block xl:-right-20">
           <img 
-            src="./lovable-uploads/vuoodesta.png" 
+            src={`${import.meta.env.BASE_URL}lovable-uploads/vuoodesta.png`} 
             alt="Vuodesta 1989" 
             className="h-32 object-contain"
           />
@@ -246,7 +246,7 @@ const HeatPumpBenefits = () => {
           {/* Kuva tekstin alapuolella mobiilissa */}
           <div className="flex justify-center lg:hidden mt-8">
             <img 
-              src="./lovable-uploads/vuoodesta.png" 
+              src={`${import.meta.env.BASE_URL}lovable-uploads/vuoodesta.png`} 
               alt="Vuodesta 1989" 
               className="h-32 object-contain"
             />

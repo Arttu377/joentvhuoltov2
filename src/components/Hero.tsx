@@ -44,9 +44,9 @@ const Hero = () => {
         )}
         <img 
           src={
-            isMobile === true ? './lovable-uploads/herophone.png' :
-            isMobile === 'big' ? './lovable-uploads/herobig.png' :
-            './lovable-uploads/tere.png'
+            isMobile === true ? `${import.meta.env.BASE_URL}lovable-uploads/herophone.png` :
+            isMobile === 'big' ? `${import.meta.env.BASE_URL}lovable-uploads/herobig.png` :
+            `${import.meta.env.BASE_URL}lovable-uploads/tere.png`
           }
           alt="Hero background"
           className="w-full h-full object-cover"
