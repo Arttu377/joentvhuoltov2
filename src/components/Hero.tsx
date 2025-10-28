@@ -49,16 +49,17 @@ const Hero = () => {
             `${import.meta.env.BASE_URL}lovable-uploads/tere.png`
           }
           alt="Hero background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover brightness-110"
           loading="eager"
           decoding="async"
           onLoad={() => setImageLoaded(true)}
           style={{
-            objectPosition: isMobile === true ? '50% 50%' : '55% 45%'
+            objectPosition: isMobile === true ? '50% 50%' : '55% 45%',
+            filter: 'brightness(1.1) saturate(1.05)'
           }}
         />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        {/* Light overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/10"></div>
       </div>
       
       {/* Overlay for better text readability */}
