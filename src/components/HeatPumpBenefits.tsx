@@ -198,9 +198,9 @@ const HeatPumpBenefits = () => {
             {/* Kuvat oikealla */}
             <div className="col-span-1 lg:col-span-1 flex justify-center md:justify-start lg:justify-end items-start relative h-full mt-2 lg:mt-0 lg:mr-16 xl:mr-0">
               <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-6 lg:block lg:relative">
-                <img 
-                  src="./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
-                  alt="Elektroniikkahuolto" 
+              <img 
+                src="./lovable-uploads/ca29b7e3-3bf3-471d-8579-afc6dcae82ad.png" 
+                alt="Elektroniikkahuolto" 
                   className="w-60 h-44 md:w-56 md:h-44 lg:w-64 lg:h-48 object-cover rounded-xl shadow-lg lg:-translate-x-8"
                 />
                 <div className="w-60 h-44 md:w-56 md:h-44 lg:w-64 lg:h-48 rounded-xl shadow-lg lg:translate-x-8 lg:translate-y-8 lg:absolute lg:overflow-hidden bg-transparent">
@@ -209,8 +209,8 @@ const HeatPumpBenefits = () => {
                     alt="Antenniasennukset" 
                     className="w-full h-full object-cover"
                     style={{ transform: 'scale(1.15)' }}
-                  />
-                </div>
+              />
+            </div>
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@ const HeatPumpBenefits = () => {
           </h3>
           <div className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
             <p>
-              Historia alkaa 1989 vuodesta TV-huollosta ja muusta viihde-elektroniikan huoltamisesta. Kodin elektroniikan kertakäyttöisyyden myötä on tullut mukaan teollisuus-ja ammattielektroniikka, sekä ilmalämpöpumppujen asennukset, ja niiden huollot ja korjaukset.
+              Historia alkaa vuodesta 1989, TV-huollosta ja muusta viihde-elektroniikan huoltamisesta. Kodin elektroniikan kertakäyttöisyyden myötä on tullut mukaan teollisuus-ja ammattielektroniikka, sekä ilmalämpöpumppujen asennukset, ja niiden huollot ja korjaukset.
             </p>
           </div>
           
@@ -252,8 +252,8 @@ const HeatPumpBenefits = () => {
             />
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
     </>
   );
 };

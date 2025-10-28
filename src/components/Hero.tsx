@@ -21,6 +21,19 @@ const Hero = () => {
     return () => window.removeEventListener('resize', checkSize);
   }, []);
 
+  const handleScroll = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const elementRect = element.getBoundingClientRect();
+      const absoluteElementTop = elementRect.top + window.pageYOffset;
+      const offsetPosition = absoluteElementTop - 80;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return <>
       {/* Fixed Background Image */}
       <div className="fixed inset-0 z-0">
@@ -44,6 +57,8 @@ const Hero = () => {
             objectPosition: isMobile === true ? '50% 50%' : '55% 45%'
           }}
         />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
       
       {/* Overlay for better text readability */}
@@ -62,13 +77,22 @@ const Hero = () => {
               <div className="absolute inset-0 bg-[#2B4565]/40 rounded-lg -mx-2 md:-mx-6"></div>
               
               <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 py-2 px-2 md:px-6">
-                <div className="text-center">
+                <div 
+                  className="text-center cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => handleScroll('heat-pump-details')}
+                >
                   <h3 className="text-xl font-semibold text-white mb-2">Ilmalämpöpumpun asennukset ja huolto</h3>
                 </div>
-                <div className="text-center">
+                <div 
+                  className="text-center cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => handleScroll('electronics-details')}
+                >
                   <h3 className="text-xl font-semibold text-white mb-2">Elektroniikkahuolto</h3>
                 </div>
-                <div className="text-center">
+                <div 
+                  className="text-center cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => handleScroll('electronics-details')}
+                >
                   <h3 className="text-xl font-semibold text-white mb-2">Antenniasennukset ja korjaukset</h3>
                 </div>
               </div>
