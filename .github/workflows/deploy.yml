@@ -36,11 +36,9 @@ jobs:
 
       - name: Copy CNAME to dist
         run: |
-          if [ -f "public/CNAME" ]; then
-            cp public/CNAME dist/
-          elif [ -f "CNAME" ]; then
-            cp CNAME dist/
-          fi
+          cp public/CNAME dist/CNAME
+          echo "CNAME copied successfully"
+          ls -la dist/ | grep CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
