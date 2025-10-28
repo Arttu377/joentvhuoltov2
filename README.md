@@ -120,6 +120,35 @@ Jos näet TypeScript-virheitä, varmista että:
 1. VS Code käyttää oikeaa TypeScript-versiota (`Ctrl+Shift+P > TypeScript: Select TypeScript Version`)
 2. Valitse "Use Workspace Version"
 
+## GitHub Pages -käyttöönotto
+
+Kun haluat julkaista sivut GitHub Pagesiin:
+
+1. **Poista custom domain GitHubista** (jos on asetettu):
+   - Mene repo → Settings → Pages
+   - Jos näet "Custom domain" kentän, joka osoittaa `joenlaitehuolto.fi`
+   - Poista domain ja tallenna
+
+2. **Valitse GitHub Actions -käyttöönotto**:
+   - Settings → Pages → Build and deployment
+   - Source: **GitHub Actions**
+   - Tallennus
+
+3. **Push muutokset**:
+   ```bash
+   git add .
+   git commit -m "Deploy to GitHub Pages"
+   git push
+   ```
+
+4. **Odota että GitHub Actions build valmistuu** ja sivut ovat live osoitteessa:
+   https://arttu377.github.io/joentvhuolto/
+
+Huom: Jos haluat myöhemmin käyttää omaa domainia `joenlaitehuolto.fi`, sinun pitää:
+1. Konfiguroida DNS-asetukset domain-palvelimella
+2. Lisätä CNAME-tiedosto uudelleen GitHub Pagesiin
+3. Asettaa custom domain GitHub Pages -asetuksissa
+
 ## Lisätietoja
 
 - [Vite dokumentaatio](https://vitejs.dev/)
