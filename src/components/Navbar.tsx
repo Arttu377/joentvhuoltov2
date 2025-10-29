@@ -36,7 +36,14 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 mr-20">
-          <a href="#" className="text-[#2B4565] hover:text-[#1e3147] font-medium text-lg transition-colors">
+          <a 
+            href="/" 
+            className="text-[#2B4565] hover:text-[#1e3147] font-medium text-lg transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             Etusivu
           </a>
           <a 
@@ -93,9 +100,13 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6">
           <div className="flex flex-col space-y-4">
             <a 
-              href="#" 
+              href="/" 
               className="text-gray-700 hover:text-[#2B4565] font-medium text-lg transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsMobileMenuOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
             >
               Etusivu
             </a>

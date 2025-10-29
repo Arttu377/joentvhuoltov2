@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joenlaitehuolto.fi/sitemap.xml
+
+
