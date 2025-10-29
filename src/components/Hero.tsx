@@ -60,6 +60,8 @@ const Hero = () => {
         />
         {/* Light overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+        {/* Top white gradient to ensure navbar background looks white at page top */}
+        <div className="absolute top-0 left-0 right-0 h-16 md:h-20 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
       </div>
       
       {/* Overlay for better text readability */}
