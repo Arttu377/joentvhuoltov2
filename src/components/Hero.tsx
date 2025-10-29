@@ -36,7 +36,7 @@ const Hero = () => {
 
   return <>
       {/* Fixed Background Image */}
-      <div className="fixed inset-0 -z-10 pointer-events-none">
+      <div className="fixed inset-0 z-0 pointer-events-none">
         {!imageLoaded && (
           <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2B4565]"></div>
@@ -44,9 +44,9 @@ const Hero = () => {
         )}
         <img 
           src={
-            isMobile === true ? `${import.meta.env.BASE_URL}lovable-uploads/herophone.png` :
-            isMobile === 'big' ? `${import.meta.env.BASE_URL}lovable-uploads/herobig.png` :
-            `${import.meta.env.BASE_URL}lovable-uploads/tere.png`
+            isMobile === true ? `/lovable-uploads/herophone.png` :
+            isMobile === 'big' ? `/lovable-uploads/herobig.png` :
+            `/lovable-uploads/tere.png`
           }
           alt="Hero background"
           className="w-full h-full object-cover brightness-110"
