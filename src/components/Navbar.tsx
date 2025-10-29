@@ -20,9 +20,9 @@ const Navbar = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6 md:py-4",
-        isScrolled 
-          ? "bg-white backdrop-blur-lg shadow-sm" 
-          : "bg-transparent"
+        // Mobile: aina valkoinen tausta (peittää heron reunan); Desktop: läpinäkyvä kunnes scrollataan
+        "bg-white md:bg-transparent",
+        isScrolled && "backdrop-blur-lg shadow-sm md:bg-white"
       )}
     >
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-0">
