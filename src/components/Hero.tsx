@@ -36,7 +36,7 @@ const Hero = () => {
 
   return <>
       {/* Fixed Background Image */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 -z-10 pointer-events-none">
         {!imageLoaded && (
           <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2B4565]"></div>
@@ -59,7 +59,7 @@ const Hero = () => {
           }}
         />
         {/* Light overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
       </div>
       
       {/* Overlay for better text readability */}
