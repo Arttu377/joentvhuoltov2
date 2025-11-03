@@ -22,11 +22,10 @@ const ProblemStatement = () => {
             </h3>
             <div className="text-gray-700 leading-relaxed mb-6">
               <h4 className="font-semibold text-[#2B4565] mb-3">Asennukset ja myynti:</h4>
-              <p className="mb-3">Toimitan ja asennan ilmalämpöpumppuja, kuten Mitsubishi Heavy Industries ja Innova.</p>
-              <p className="mb-4">Asennukset alusta loppuun, sisältäen sijoituspaikan arvioinnin, laitteiston asennuksen ja käyttöönoton.</p>
-              
+              <p className="mb-4">Asennan ja myyn ilmalämpöpumppuja, kuten Mitsubishi heavy Industries ja Innova.</p>
+              <p className="mb-6">Asennukset alusta loppuun, sisältäen sijoituspaikan arvioinnin, laitteiston asennuksen ja käyttöönoton.</p>
               <h4 className="font-semibold text-[#2B4565] mb-3">Huollot ja korjaukset:</h4>
-              <p>Teen korjaukset, vianselvitykset, puhdistushuollot ja toiminnan tarkistukset (180 €).</p>
+              <p className="mb-0">Ilmalämpöpumpun perushuolto alkaen 180€. Vianselvitys ja tarvittaessa korjaukset.</p>
             </div>
             <div className="flex justify-center space-x-8">
               <img 
