@@ -122,7 +122,7 @@ const ProblemStatement = () => {
             Palvelut
           </h3>
           <p className="text-convrt-dark-blue/80 text-lg max-w-2xl mx-auto text-[#2b4565] mb-8">
-            Tarjoan ilmalämpöpumppujen ja antennien asennuksia sekä elektroniikkahuoltoa.
+            Ilmalämpöpumppujen ja antennien asennukset sekä elektroniikkahuollot Joensuussa.
           </p>
         </div>
         
